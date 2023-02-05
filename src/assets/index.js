@@ -23,7 +23,7 @@ import twitter from "./twitter.svg";
 import people01 from "./people01.png";
 import people02 from "./people02.png";
 import people03 from "./people03.png";
-import logo_UTN from "./logo_utn.svg";
+import logoUTN from "./logoUTN.svg";
 import filesBro from "./Files-bro.svg";
 
 export {
@@ -52,6 +52,6 @@ export {
   people01,
   people02,
   people03,
-  logo_UTN,
+  logoUTN,
   filesBro,
 };
