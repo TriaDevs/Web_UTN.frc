@@ -1,4 +1,19 @@
-import { people01, people02, people03, facebook, instagram, linkedin, twitter, airbnb, binance, coinbase, dropbox, send, shield, star  } from "../assets";
+import {
+  people01,
+  people02,
+  people03,
+  facebook,
+  instagram,
+  linkedin,
+  twitter,
+  airbnb,
+  binance,
+  coinbase,
+  dropbox,
+  send,
+  shield,
+  star,
+} from "../assets";
 
 export const navLinks = [
   {
@@ -6,20 +21,12 @@ export const navLinks = [
     title: "Home",
   },
   {
-    id: "features",
-    title: "Features",
-  },
-  {
-    id: "product",
-    title: "Product",
-  },
-  {
-    id: "clients",
-    title: "Clients",
-  },
-  {
-    id:"subjects",
+    id: "subjects",
     title: "Subjects",
+  },
+  {
+    id: "help",
+    title: "Help",
   },
 ];
 
