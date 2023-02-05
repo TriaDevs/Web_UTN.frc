@@ -81,21 +81,22 @@ export const feedback = [
   },
 ];
 
+//stats subjets
 export const stats = [
   {
     id: "stats-1",
-    title: "User Active",
-    value: "3800+",
+    title: "Archivos",
+    value: "1000+",
   },
   {
     id: "stats-2",
-    title: "Trusted by Company",
-    value: "230+",
+    title: "Materias",
+    value: "15+",
   },
   {
     id: "stats-3",
-    title: "Transaction",
-    value: "$230M+",
+    title: "Parciales",
+    value: "200+",
   },
 ];
 
