@@ -24,7 +24,7 @@ import people01 from "./people01.png";
 import people02 from "./people02.png";
 import people03 from "./people03.png";
 import Logo_UTN from "./Logo_utn.png";
-import filesBro from "./Files-bro.svg"
+import filesBro from "./Files-bro.svg";
 
 export {
   airbnb,
