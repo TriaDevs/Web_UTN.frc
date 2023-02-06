@@ -1,20 +1,60 @@
 import styles from "../style";
 import Button from "./Button";
+import { algebra } from "../constants";
 
 const CTA = () => (
-  <section className={`${styles.flexCenter} ${styles.marginY} ${styles.padding} sm:flex-row flex-col bg-black-gradient-2 rounded-[20px] box-shadow`}>
-    <div className="flex-1 flex flex-col">
-      <h2 className={styles.heading2}>Let’s try our service now!</h2>
-      <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
-        Everything you need to accept card payments and grow your business
-        anywhere on the planet.
-      </p>
+  <div>
+    <h2 className={styles.heading2}>Algebra</h2>
+    <div className="bg-black-gradient-2 rounded-[20px] box-shadow">
+      <section
+        className={`${styles.flexStart} ${styles.marginY} ${styles.padding} sm:flex-row flex flex-col`}
+      >
+        <div className="flex-1 flex flex-col">
+          <p className={`${styles.paragraph} max-w-[470px]`}>
+            <span className="text-white text-[25px]">Documentos</span>
+          </p>
+          {algebra.book.map((book) => (
+            <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
+              <Button link={book.link} /> {book.id}
+            </p>
+          ))}
+          <br />
+          <p className={`${styles.paragraph} max-w-[470px]`}>
+            <span className="text-white text-[25px]">Parciales</span>
+          </p>
+          {algebra.exams.map((exams) => (
+            <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
+              <Button link={exams.link} /> {exams.id}
+            </p>
+          ))}
+        </div>
+        <div className="flex-1 flex flex-col">
+          <p className={`${styles.paragraph} max-w-[470px]`}>
+            <span className="text-white text-[25px]">Unidades</span>
+          </p>
+          {algebra.units.map((units) => (
+            <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
+              <Button link={units.link} /> {units.id}
+            </p>
+          ))}
+        </div>
+      </section>
+      <section
+        className={`${styles.flexStart} ${styles.marginY} ${styles.padding} sm:flex-row flex flex-col`}
+      >
+        <div className="flex-1 flex flex-col">
+          <p className={`${styles.paragraph} max-w-[470px]`}>
+            <span className="text-white text-[25px]">Links de ayuda</span>
+          </p>
+          {algebra.links.map((links) => (
+            <p className={`${styles.paragraph} mt-5`}>
+              <Button link={links.link} /> {links.id}
+            </p>
+          ))}
+        </div>
+      </section>
     </div>
-
-    <div className={`${styles.flexCenter} sm:ml-10 ml-0 sm:mt-0 mt-10`}>
-      <Button />
-    </div>
-  </section>
+  </div>
 );
 
 export default CTA;
