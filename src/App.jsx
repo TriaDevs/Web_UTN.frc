@@ -69,7 +69,7 @@ const App = () => (
     <Routes>
       <Route>
         <Route path="/" element={<Landing />} />
-        <Route path="/ingreso/fisica" element={<MateriasAlgebra />}/>
+        <Route path="/ingreso" element={<MateriasAlgebra />}/>
         <Route path="/ingreso/matematica" element={<MateriasAlgebra />}/>
         <Route path="/basicas/fisicai" element={<MateriasAlgebra />}/>
         <Route path="/basicas/fisicaii" element={<MateriasAlgebra />}/>
