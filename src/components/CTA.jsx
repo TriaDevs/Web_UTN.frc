@@ -11,30 +11,30 @@ const CTA = () => (
       >
         <div className="flex-1 flex flex-col">
           <p className={`${styles.paragraph} max-w-[470px]`}>
-            <span className="text-white text-[25px]">Documentos</span>
+            <span className="text-cyan-400 text-[25px]">Documentos</span>
           </p>
           {algebra.book.map((book) => (
             <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
-              <Button link={book.link} /> {book.id}
+              <Button link={book.link} title={book.id}/> 
             </p>
           ))}
           <br />
           <p className={`${styles.paragraph} max-w-[470px]`}>
-            <span className="text-white text-[25px]">Parciales</span>
+            <span className="text-cyan-400 text-[25px]">Parciales</span>
           </p>
           {algebra.exams.map((exams) => (
             <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
-              <Button link={exams.link} /> {exams.id}
+              <Button link={exams.link}  title={exams.id} /> 
             </p>
           ))}
         </div>
         <div className="flex-1 flex flex-col">
           <p className={`${styles.paragraph} max-w-[470px]`}>
-            <span className="text-white text-[25px]">Unidades</span>
+            <span className="text-cyan-400 text-[25px]">Unidades</span>
           </p>
           {algebra.units.map((units) => (
             <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
-              <Button link={units.link} /> {units.id}
+              <Button link={units.link}  title={units.id} /> 
             </p>
           ))}
         </div>
@@ -44,11 +44,11 @@ const CTA = () => (
       >
         <div className="flex-1 flex flex-col">
           <p className={`${styles.paragraph} max-w-[470px]`}>
-            <span className="text-white text-[25px]">Links de ayuda</span>
+            <span className="text-cyan-400 text-[25px]">Links de ayuda</span>
           </p>
           {algebra.links.map((links) => (
             <p className={`${styles.paragraph} mt-5`}>
-              <Button link={links.link} /> {links.id}
+              <Button link={links.link}  title={links.id} /> 
             </p>
           ))}
         </div>
