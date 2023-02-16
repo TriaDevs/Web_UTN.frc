@@ -62,8 +62,8 @@ const MateriasAlgebra = () => {
       </div>
     </div>
   );
-
 };
+
 const App = () => (
   <BrowserRouter>
     <Routes>
