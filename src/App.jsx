@@ -68,7 +68,7 @@ const App = () => (
   <BrowserRouter>
     <Routes>
       <Route>
-        <Route path="/" element={<Landing />} />
+        <Route path="/" element={<MateriasAlgebra />} />
         <Route path="/ingreso" element={<MateriasAlgebra />}/>
         <Route path="/ingreso/matematica" element={<MateriasAlgebra />}/>
         <Route path="/basicas/fisicai" element={<MateriasAlgebra />}/>
